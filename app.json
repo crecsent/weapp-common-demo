@@ -1,0 +1,41 @@
+{
+  "pages":[
+    "pages/home/home",
+    "pages/customNav/customNav",
+    "pages/notice/notice",
+    "pages/setting/setting"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "小程序常见需求实现",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "color": "#CACACA",
+    "selectedColor": "#3A82E6",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "iconPath": "images/home.png",
+        "selectedIconPath": "images/home_selected.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/notice/notice",
+        "iconPath": "images/notice.png",
+        "selectedIconPath": "images/notice_selected.png",
+        "text": "通知"
+      },
+      {
+        "pagePath": "pages/setting/setting",
+        "iconPath": "images/setting.png",
+        "selectedIconPath": "images/setting_selected.png",
+        "text": "设置"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

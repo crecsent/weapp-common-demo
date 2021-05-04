@@ -1,0 +1,14 @@
+@import "/utils/icon.wxss";
+page{
+  font-family: "HYXinRenWenSongW";
+  --blue:rgb(58,130,230);
+  --black:rgb(63, 63, 63);
+  --white:rgb(255, 255, 255);
+  --grey:rgb(122, 122, 122);
+}
+/* 重置小程序button组件宽度、内边距、背景颜色的样式 */
+button{
+  width: 100% !important;
+  padding: 0;
+  background-color: rgba(0,0,0,0);
+}

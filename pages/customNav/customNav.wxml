@@ -1,0 +1,8 @@
+<import src="/templates/map.wxml" />
+<import src="/templates/discuss.wxml" />
+<import src="/templates/home.wxml" />
+<import src="/templates/notice.wxml" />
+<import src="/templates/setting.wxml" />
+
+<template is="{{curTab}}" data="{{placeholder:curTab}}"></template>
+<Navigator curTab="{{curTab}}" catch:switch="switch"></Navigator>

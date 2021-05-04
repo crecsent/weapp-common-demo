@@ -1,0 +1,35 @@
+<view class="tutorial">
+  <view class="tutorial-nav">
+    <view class="tutorial__title">
+      底部导航栏
+    </view>
+    <view class="tutorial__intro">
+      小程序原生提供了底部导航栏的功能，仅需在app.json文件中配置tabBar。<view class="tutorial__link" bind:tap="copyToClipboard" data-link="https://developers.weixin.qq.com/miniprogram/dev/reference/configuration/app.html#tabBar"/>
+    </view>
+    <view class="tutorial__intro">
+      但原生的导航栏样式很朴素，若要更个性化的导航栏，需要自己另外开发。
+    </view>
+    <button class="tutorial__btn"  bind:tap="toPage" data-url="/pages/customNav/customNav">
+      查看自定义底部导航栏
+    </button>
+  </view>
+  <view class="tutorial-cond">
+    <view class="tutorial__title">
+      列表渲染与条件渲染
+    </view>
+    <view class="tutorial__intro">
+      列表渲染<view class="tutorial__link" bind:tap="copyToClipboard" data-link="https://developers.weixin.qq.com/miniprogram/dev/reference/wxml/list.html"/>
+      条件渲染<view class="tutorial__link" bind:tap="copyToClipboard" data-link="https://developers.weixin.qq.com/miniprogram/dev/reference/wxml/conditional.html"/>
+      是小程序开发中wxml最常用到的两个语法。
+    </view>
+    <view wx:if="{{list.length}}">
+      <view class="tutorial__item" wx:for="{{list}}" bind:tap="clickItem" data-id="{{item.id}}">
+        {{item.text}}
+      </view>
+    </view>
+    <input class="tutorial__input" type="number" maxlength="1" placeholder="{{placeholder}}" model:value="{{num}}"/>
+    <button class="tutorial__btn"  bind:tap="renderList">
+      查看渲染效果
+    </button>
+  </view>
+</view>

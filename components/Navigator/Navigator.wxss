@@ -1,0 +1,13 @@
+.navigator-container{
+  position:fixed;
+  z-index:10;
+  bottom:-4rpx;
+  left:-4rpx;
+  width: 758rpx; 
+  height: 100rpx;
+  background-size:cover;
+}
+
+.navigator-container__icon{
+
+}

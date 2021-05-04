@@ -1,0 +1,6 @@
+<view class="navigator-container" style="background-image: url('/images/border.svg');">
+   <view wx:for="{{iconNames}}" 
+         style="{{index===current?'color:var(--blue)':'color:var(--black)'}};{{styles[index]}}" 
+         class="icon-{{iconNames[index]}}" 
+         bind:tap="switch" data-id="{{index}}"/>
+</view>
